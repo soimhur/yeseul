@@ -4,11 +4,8 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Meddon");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Niconne");
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:400i,600");
-@import url("https://fonts.googleapis.com/css?family=Alice");
-@import url("https://fonts.googleapis.com/css?family=Cookie");
-@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   /* 1 */
@@ -384,7 +381,7 @@ html {
   line-height: 1.75; }
 
 body {
-  font-family: "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Vollkorn", "Lobster", "Niconne", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   word-break: keep-all;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -420,7 +417,7 @@ a {
 
 /* FONT STYLE */
 .text-writing {
-  font-family: "Meddon", cursive;
+  font-family: "Meddon";
   font-size: 4rem;
   padding-top: 6rem;
   font-weight: normal; }
@@ -568,7 +565,8 @@ img {
   text-align: center; }
 
 .back-button {
-  border: 1.2px solid #584D4B;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
   padding: 0.5em 0.7em;
   margin-left: -0.6em;
   margin-top: 0.2em;
@@ -615,7 +613,7 @@ img {
   left: 0;
   right: 0;
   font-size: 3.5em;
-  font-family: 'Cookie';
+  font-family: 'Niconne';
   color: #c28b57;
   line-height: 1; }
 
@@ -754,7 +752,7 @@ img {
     line-height: 1.7;
     text-align: center;
     font-size: 45px;
-    font-family: 'Cookie'; }
+    font-family: 'Niconne'; }
   .gallery-header-subtitle {
     font-size: 0.6em;
     color: #c28b57;

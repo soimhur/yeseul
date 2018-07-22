@@ -89,8 +89,6 @@
 }
 
 .text-button {
-  // border-bottom: 2px solid $main-blue;
-  // padding-bottom: 0.2em;
   border: 1.2px solid $main-blue;
   padding: 0.7em 1.5em;
   font-weight: 600;
@@ -98,7 +96,9 @@
 }
 
 .back-button {
-  border: 1.2px solid $main-blue;
+  // border: 1.2px solid $main-blue;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
   padding: 0.5em 0.7em;
   margin-left: -0.6em;
   margin-top: 0.2em;
@@ -164,7 +164,7 @@
   left: 0;
   right: 0;
   font-size: 3.5em;
-  font-family: 'Cookie';
+  font-family: 'Niconne';
   color: $gold;
   line-height: 1;
 }
@@ -357,7 +357,7 @@
     line-height: 1.7;
     text-align: center;
     font-size: 45px;
-    font-family: 'Cookie';
+    font-family: 'Niconne';
   }
   &-subtitle {
     font-size: 0.6em;

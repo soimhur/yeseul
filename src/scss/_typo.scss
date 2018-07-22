@@ -1,18 +1,14 @@
 @import 'color';
-@import url('https://fonts.googleapis.com/css?family=Meddon');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Niconne');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400i,600');
-@import url('https://fonts.googleapis.com/css?family=Alice');
-@import url('https://fonts.googleapis.com/css?family=Cookie');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-$fonts:
-'Vollkorn',
-// 'Alice',
+$fonts: 'Vollkorn',
+'Lobster',
+'Niconne',
 'Noto Sans KR',
 'Apple SD Gothic Neo',
 sans-serif;
-$handwriting-font: 'Meddon',
-cursive;
+$handwriting-font: 'Meddon';
 $font-size_small: 0.75rem;
 $font-size_base: 1rem;
 $font-size_1: 1.1rem;
