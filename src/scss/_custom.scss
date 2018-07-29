@@ -27,34 +27,12 @@
 .circle {
   width: 6px;
   height: 6px;
-  background: $gold;
+  background: $main-blue;
   text-align: center;
   margin: 1.5em auto 1em;
   border-radius: 50%;
 }
 
-// .line {
-//   display: block;
-//   border: 0.5px solid $gold;
-//   width: 100%;
-//   margin: 1em auto 0;
-//   text-align: center;
-// }
-// .section-title {
-//   padding: 1em 0;
-// }
-// .sub-title {
-//   font-weight: 500;
-//   font-size: 1.1em;
-//   color: $gold;
-//   text-align: center;
-//   margin: 0 auto;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   background: $light-grey;
-//   margin-top: -0.8em;
-//   max-width: 150px;
-// }
 .section-title {
   padding: 1em 0;
   .line {
@@ -81,10 +59,10 @@
   .sub-title {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: $gold;
-    margin-top: 0.5em;
-    font-family: 'Alice';
+    margin-top: 0.6em;
+    font-family: serif;
   }
 }
 
@@ -153,9 +131,6 @@
 #section-1 {
   border-bottom: 2px solid $gold;
   border-top: 2px solid $gold;
-  .diamond {
-    background: $gold;
-  }
 }
 
 .main-type {
@@ -164,7 +139,7 @@
   left: 0;
   right: 0;
   font-size: 3.5em;
-  font-family: 'Niconne';
+  font-family: 'Tangerine';
   color: $gold;
   line-height: 1;
 }
@@ -285,8 +260,9 @@
   padding: 1.2em;
   color: $dark-grey;
   font-family: 'Noto Sans KR' !important;
-  background: rgba(242, 242, 242, 0.8);
-  border-radius: 0.2em;
+  // background: rgba(242, 242, 242, 0.8);
+  border-top: 0.5px $dark-grey solid;
+  border-bottom: 0.5px $dark-grey solid;
 }
 
 .share-button {
@@ -357,14 +333,14 @@
     line-height: 1.7;
     text-align: center;
     font-size: 45px;
-    font-family: 'Niconne';
+    font-family: 'Tangerine';
   }
   &-subtitle {
     font-size: 0.6em;
     color: $main-blue;
     letter-spacing: 3px;
     font-weight: 400;
-    font-family: sans-serif;
+    // font-family: sans-serif;
   }
   .title-pic {
     width: 100%;
