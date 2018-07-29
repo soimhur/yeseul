@@ -11,7 +11,7 @@ $(function() {
     fadeEffect: {
       crossFade: true
     },
-    speed: 1000,
+    speed: 1200,
     spaceBetween: 10,
     autoplay: {
       delay: 3000,

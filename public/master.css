@@ -4,8 +4,8 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Lobster|Niconne");
-@import url("https://fonts.googleapis.com/css?family=Vollkorn:400i,600");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:600,400i");
+@import url("https://fonts.googleapis.com/css?family=Tangerine:700");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   /* 1 */
@@ -381,7 +381,7 @@ html {
   line-height: 1.75; }
 
 body {
-  font-family: "Vollkorn", "Lobster", "Niconne", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Vollkorn", "Tangerine", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   word-break: keep-all;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -524,7 +524,7 @@ img {
 .circle {
   width: 6px;
   height: 6px;
-  background: #c28b57;
+  background: #584D4B;
   text-align: center;
   margin: 1.5em auto 1em;
   border-radius: 50%; }
@@ -553,10 +553,10 @@ img {
   .section-title .sub-title {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #c28b57;
-    margin-top: 0.5em;
-    font-family: 'Alice'; }
+    margin-top: 0.6em;
+    font-family: serif; }
 
 .text-button {
   border: 1.2px solid #584D4B;
@@ -604,8 +604,6 @@ img {
 #section-1 {
   border-bottom: 2px solid #c28b57;
   border-top: 2px solid #c28b57; }
-  #section-1 .diamond {
-    background: #c28b57; }
 
 .main-type {
   position: absolute;
@@ -613,7 +611,7 @@ img {
   left: 0;
   right: 0;
   font-size: 3.5em;
-  font-family: 'Niconne';
+  font-family: 'Tangerine';
   color: #c28b57;
   line-height: 1; }
 
@@ -701,8 +699,8 @@ img {
   padding: 1.2em;
   color: #666666;
   font-family: 'Noto Sans KR' !important;
-  background: rgba(242, 242, 242, 0.8);
-  border-radius: 0.2em; }
+  border-top: 0.5px #666666 solid;
+  border-bottom: 0.5px #666666 solid; }
 
 .share-button {
   position: relative;
@@ -752,10 +750,10 @@ img {
     line-height: 1.7;
     text-align: center;
     font-size: 45px;
-    font-family: 'Niconne'; }
+    font-family: 'Tangerine'; }
   .gallery-header-subtitle {
     font-size: 0.6em;
-    color: #c28b57;
+    color: #584D4B;
     letter-spacing: 3px;
     font-weight: 400;
     font-family: sans-serif; }
@@ -763,15 +761,15 @@ img {
     width: 100%; }
 
 .area-header {
-  padding: 2em 0; }
+  padding: 2em 0 0; }
   .area-header-title {
-    font-size: 28px;
-    font-weight: 400; }
+    font-size: 28px; }
   .area-header-line {
     display: block;
-    margin: 2em auto;
-    height: 50px;
+    margin: 1em auto 0;
+    height: 20px;
     border-left: 1px solid #111;
+    transform: rotate(40deg);
     width: 0%; }
   .area-header-description {
     padding: 1em 0;
