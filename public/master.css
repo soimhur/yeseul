@@ -4,7 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Vollkorn:600");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:600,400i");
 @import url("https://fonts.googleapis.com/css?family=Tangerine:700");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
@@ -755,15 +755,15 @@ img {
     font-size: 0.6em;
     color: #584D4B;
     letter-spacing: 3px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: sans-serif; }
   .gallery-header .title-pic {
     width: 100%; }
 
 .area-header {
   padding: 2em 0 0; }
   .area-header-title {
-    font-size: 28px;
-    font-weight: 400; }
+    font-size: 28px; }
   .area-header-line {
     display: block;
     margin: 1em auto 0;
