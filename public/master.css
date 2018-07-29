@@ -866,13 +866,13 @@ img {
     animation: fade 1s ease 0s infinite; }
   .preloader .wrapper {
     vertical-align: middle;
-    margin: 0.5em 0; }
+    margin: 0.5em 0 0.5em 0.5em; }
 
 .loading {
   float: left;
   background: #3b3331;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   margin-right: 10px;
   animation: loadingAnimation .65s infinite; }
