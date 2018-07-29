@@ -129,8 +129,9 @@
 //////// section-1///////////
 /////////////////////////////
 #section-1 {
-  border-bottom: 2px solid $gold;
-  border-top: 2px solid $gold;
+  border-bottom: 4px solid $gold;
+  border-top: 4px solid $gold;
+  background: $grey;
 }
 
 .main-type {
@@ -260,9 +261,8 @@
   padding: 1.2em;
   color: $dark-grey;
   font-family: 'Noto Sans KR' !important;
-  // background: rgba(242, 242, 242, 0.8);
-  border-top: 0.5px $dark-grey solid;
-  border-bottom: 0.5px $dark-grey solid;
+  border-top: 0.7px $dark-grey solid;
+  border-bottom: 0.7px $dark-grey solid;
 }
 
 .share-button {
@@ -467,60 +467,54 @@
   width: 80px;
   height: 60px;
   margin: -30px 0 0 -40px;
-  .lines {
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    .lline {
-      width: 80px;
-      height: 2px;
-      background-color: $main-blue;
-      position: absolute;
-      clip: rect(0, 0, 20px, 0);
-      &.lline-1 {
-        top: 0;
-        animation: slide 2s ease 0s infinite;
-      }
-      &.lline-2 {
-        top: 10px;
-        animation: slide 2s ease 0.25s infinite;
-      }
-      &.lline-3 {
-        top: 20px;
-        animation: slide 2s ease 0.5s infinite;
-      }
-    }
-  }
+  display: flex;
+  justify-content: center;
   .loading-text {
     position: absolute;
     top: 30px;
     text-align: center;
     width: 100%;
     color: $main-blue;
-    font-size: 13px;
+    font-size: 14px;
     font-family: sans-serif;
     letter-spacing: 3px;
     line-height: 1.7;
     height: 10px;
     animation: fade 1s ease 0s infinite;
   }
+  .wrapper {
+    vertical-align: middle;
+    margin: 0.5em 0;
+  }
 }
 
-@keyframes slide {
+.loading {
+  float: left;
+  background: $main-blue;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: loadingAnimation .65s infinite;
+}
+
+.circle2 {
+  animation-delay: -.1s;
+}
+
+.circle3 {
+  animation-delay: -.2s;
+}
+
+@keyframes loadingAnimation {
   0% {
-    clip: rect(0, 0, 20px, 0);
-  }
-  30% {
-    clip: rect(0, 80px, 20px, 0);
+    transform: translateY(0%);
   }
   50% {
-    clip: rect(0, 80px, 20px, 0);
-  }
-  80% {
-    clip: rect(0, 80px, 20px, 80px);
+    transform: translateY(100%);
   }
   100% {
-    clip: rect(0, 80px, 20px, 80px);
+    transform: translateY(0%);
   }
 }
 

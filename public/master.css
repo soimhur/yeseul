@@ -409,7 +409,7 @@ a {
   text-decoration: none; }
 
 .linktext {
-  border-bottom: 1px solid #584D4B; }
+  border-bottom: 1px solid #3b3331; }
 
 /* FONT COLOR */
 .text-w {
@@ -444,7 +444,7 @@ body {
   height: 100%; }
 
 body {
-  color: #584D4B;
+  color: #3b3331;
   -webkit-overflow-scrolling: touch; }
 
 .body-main {
@@ -505,7 +505,7 @@ img {
 .diamond {
   width: 5px;
   height: 5px;
-  background-color: #584D4B;
+  background-color: #3b3331;
   text-align: center;
   margin: 1.5em auto;
   transform: rotate(-45deg); }
@@ -524,7 +524,7 @@ img {
 .circle {
   width: 6px;
   height: 6px;
-  background: #584D4B;
+  background: #3b3331;
   text-align: center;
   margin: 1.5em auto 1em;
   border-radius: 50%; }
@@ -559,7 +559,7 @@ img {
     font-family: serif; }
 
 .text-button {
-  border: 1.2px solid #584D4B;
+  border: 1.2px solid #3b3331;
   padding: 0.7em 1.5em;
   font-weight: 600;
   text-align: center; }
@@ -602,8 +602,9 @@ img {
   animation: to-left 0.6s ease-in-out infinite running; }
 
 #section-1 {
-  border-bottom: 2px solid #c28b57;
-  border-top: 2px solid #c28b57; }
+  border-bottom: 4px solid #c28b57;
+  border-top: 4px solid #c28b57;
+  background: #F4F4F4; }
 
 .main-type {
   position: absolute;
@@ -627,7 +628,7 @@ img {
 .text-box {
   max-width: 90%;
   margin: 0 auto;
-  color: #584D4B;
+  color: #3b3331;
   font-weight: 400; }
   .text-box:last-child {
     margin-top: 2rem;
@@ -699,18 +700,18 @@ img {
   padding: 1.2em;
   color: #666666;
   font-family: 'Noto Sans KR' !important;
-  border-top: 0.5px #666666 solid;
-  border-bottom: 0.5px #666666 solid; }
+  border-top: 0.7px #666666 solid;
+  border-bottom: 0.7px #666666 solid; }
 
 .share-button {
   position: relative;
-  border: 1px solid #584D4B;
+  border: 1px solid #3b3331;
   z-index: 2;
   margin: 1.5em 0 0;
   padding: 1.2em 0 1em;
   font-weight: bold;
   text-decoration: none;
-  color: #584D4B;
+  color: #3b3331;
   text-align: center; }
   .share-button:hover:before {
     top: 0;
@@ -728,7 +729,7 @@ img {
     left: -10px;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
-    border: 1px solid #584D4B;
+    border: 1px solid #3b3331;
     transition: all .3s ease; }
 
 @media (min-width: 550px) {
@@ -753,7 +754,7 @@ img {
     font-family: 'Tangerine'; }
   .gallery-header-subtitle {
     font-size: 0.6em;
-    color: #584D4B;
+    color: #3b3331;
     letter-spacing: 3px;
     font-weight: 400;
     font-family: sans-serif; }
@@ -848,50 +849,47 @@ img {
   left: 50%;
   width: 80px;
   height: 60px;
-  margin: -30px 0 0 -40px; }
-  .preloader .lines {
-    width: 80px;
-    height: 40px;
-    position: absolute; }
-    .preloader .lines .lline {
-      width: 80px;
-      height: 2px;
-      background-color: #584D4B;
-      position: absolute;
-      clip: rect(0, 0, 20px, 0); }
-      .preloader .lines .lline.lline-1 {
-        top: 0;
-        animation: slide 2s ease 0s infinite; }
-      .preloader .lines .lline.lline-2 {
-        top: 10px;
-        animation: slide 2s ease 0.25s infinite; }
-      .preloader .lines .lline.lline-3 {
-        top: 20px;
-        animation: slide 2s ease 0.5s infinite; }
+  margin: -30px 0 0 -40px;
+  display: flex;
+  justify-content: center; }
   .preloader .loading-text {
     position: absolute;
     top: 30px;
     text-align: center;
     width: 100%;
-    color: #584D4B;
-    font-size: 13px;
+    color: #3b3331;
+    font-size: 14px;
     font-family: sans-serif;
     letter-spacing: 3px;
     line-height: 1.7;
     height: 10px;
     animation: fade 1s ease 0s infinite; }
+  .preloader .wrapper {
+    vertical-align: middle;
+    margin: 0.5em 0; }
 
-@keyframes slide {
+.loading {
+  float: left;
+  background: #3b3331;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: loadingAnimation .65s infinite; }
+
+.circle2 {
+  animation-delay: -.1s; }
+
+.circle3 {
+  animation-delay: -.2s; }
+
+@keyframes loadingAnimation {
   0% {
-    clip: rect(0, 0, 20px, 0); }
-  30% {
-    clip: rect(0, 80px, 20px, 0); }
+    transform: translateY(0%); }
   50% {
-    clip: rect(0, 80px, 20px, 0); }
-  80% {
-    clip: rect(0, 80px, 20px, 80px); }
+    transform: translateY(100%); }
   100% {
-    clip: rect(0, 80px, 20px, 80px); } }
+    transform: translateY(0%); } }
 
 @keyframes fade {
   0% {
