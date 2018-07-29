@@ -216,19 +216,26 @@
   <!-- kakaotalk share -->
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script type='text/javascript'>
-    Kakao.init('d84a0a849fbd8d1ba7b4962549623020');
-    Kakao.Link.createTalkLinkButton({
+    Kakao.init('abd4066de40fcd6506ce379370f8cbfb');
+    Kakao.Link.createDefaultButton({
       container: '#kakao-link-btn',
-      label: '예슬 & 석환 결혼합니다 \n날짜: 2018년 9월 8일 5시 \n장소: 임피리얼팰리스서울,7층 셀레나홀',
-      image: {
-        src: 'https://dl.airtable.com/GqPvbQDBTOWyYjOIUXeo_full_ogimage.jpg',
-        width: '640',
-        height: '446'
+      objectType: 'feed',
+      content: {
+        title: '예슬 & 석환 결혼합니다',
+        description: '날짜: 2018년 9월 8일 5시 \n장소: 임피리얼팰리스서울,7층 셀레나홀',
+        imageUrl: 'https://dl.airtable.com/GqPvbQDBTOWyYjOIUXeo_full_ogimage.jpg',
+        link: {
+          mobileWebUrl: 'https://anshim.me/',
+          webUrl: 'https://anshim.me/'
+        }
       },
-      webButton: {
-        text: '청첩장 보러가기',
-        url: 'https://anshim.me/'
-      }
+      buttons: {
+        title: '청첩장 보러가기',
+        link: {
+          mobileWebUrl: 'https://anshim.me/',
+          webUrl: 'https://anshim.me/',
+        }
+      },
     });
   </script>
 
